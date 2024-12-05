@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dead Stars</title>
+    <title>Dead Stars - Christmas Edition</title>
     <style>
         /* Base Styling */
         body {
-            background-color: #121212;
+            background-color: #001f3f;
             font-family: 'Arial', sans-serif;
             color: #fff;
             text-align: center;
             padding: 50px;
             margin: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Adds a starry background */
         }
 
         /* Title Styling */
         h1 {
             font-size: 3.5em;
             margin-bottom: 20px;
-            color: #ff5555;
-            text-shadow: 0 0 10px #ff5555, 0 0 20px #ff5555;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff3333, 0 0 30px #ff6666;
         }
 
         /* Description Styling */
@@ -32,7 +33,7 @@
 
         /* Highlight Links */
         a {
-            color: #ff5555;
+            color: #ff3333;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s, text-shadow 0.3s;
@@ -48,7 +49,7 @@
             display: inline-block;
             margin-top: 30px;
             padding: 15px 30px;
-            background: linear-gradient(45deg, #ff5555, #ff7777);
+            background: linear-gradient(45deg, #ff0000, #00ff00);
             color: #fff;
             border: none;
             border-radius: 8px;
@@ -56,13 +57,13 @@
             font-weight: bold;
             text-decoration: none;
             cursor: pointer;
-            box-shadow: 0 4px 10px rgba(255, 85, 85, 0.5);
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .cta:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(255, 85, 85, 0.7);
+            box-shadow: 0 6px 12px rgba(0, 255, 0, 0.7);
         }
 
         /* Footer Styling */
@@ -73,20 +74,39 @@
         }
 
         footer a {
-            color: #ff5555;
+            color: #00ff00;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Holiday Decorations */
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            color: white;
+            font-size: 2em;
+            animation: fall 5s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Dead Stars</h1>
-    <p>Welcome to Dead Stars the<strong>fastest Discord nuke bot on discord</strong>.</p>
+    <p>Welcome to <strong>Dead Stars</strong>, the fastest Discord nuke bot.</p>
     <a class="cta" href="https://discord.gg/RrUjanuqTs">Get Started on Discord</a>
     <footer>
-        <p>Join our community: <a href="https://discord.gg/RrUjanuqTs">Our Discord</a></p>
+        <p>Join up: <a href="https://discord.gg/RrUjanuqTs">Our Discord</a></p>
     </footer>
 </body>
 </html>
