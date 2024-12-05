@@ -5,42 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dead Stars</title>
     <style>
+        /* Base Styling */
         body {
-            background-color: #000;
+            background-color: #121212;
             font-family: 'Arial', sans-serif;
             color: #fff;
             text-align: center;
             padding: 50px;
             margin: 0;
         }
+
+        /* Title Styling */
         h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin-bottom: 20px;
-            color: #dc143c;
+            color: #ff5555;
+            text-shadow: 0 0 10px #ff5555, 0 0 20px #ff5555;
         }
+
+        /* Description Styling */
         p {
-            font-size: 1.2em;
+            font-size: 1.4em;
             margin-bottom: 30px;
+            line-height: 1.5;
         }
+
+        /* Highlight Links */
         a {
-            color: #dc143c;
+            color: #ff5555;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
         }
+
         a:hover {
-            text-decoration: underline;
+            color: #ff7777;
+            text-shadow: 0 0 5px #ff7777, 0 0 10px #ff7777;
         }
+
+        /* Button Style */
+        .cta {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #ff5555, #ff7777);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 85, 85, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(255, 85, 85, 0.7);
+        }
+
+        /* Footer Styling */
         footer {
             margin-top: 50px;
             font-size: 1em;
+            color: #bbb;
+        }
+
+        footer a {
+            color: #ff5555;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Dead Stars</h1>
-    <p>This is a placeholder page for your website.</p>
+    <h1>Dead Stars</h1>
+    <p>Welcome to Dead Stars! Home of the <strong>fastest Discord nuke bot</strong>.</p>
+    <p>Unleash ultimate control with lightning-fast performance and advanced features.</p>
+    <a class="cta" href="https://discord.gg/RrUjanuqTs">Get Started on Discord</a>
     <footer>
-        <p>Join our Discord: <a href="https://discord.gg/RrUjanuqTs">Our Discord</a></p>
+        <p>Built with ❤️ by Dead Stars Team. Join our community: <a href="https://discord.gg/RrUjanuqTs">Our Discord</a></p>
     </footer>
 </body>
 </html>
