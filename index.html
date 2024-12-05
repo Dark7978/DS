@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dead Stars - Best nuke bot</title>
+    <title>Dead Stars - Commands</title>
     <style>
         /* Base Styling */
         body {
-            background-color: #001f3f;
+            background: linear-gradient(45deg, #ff0000, #00ff00);
+            background-size: 300% 300%;
+            animation: gradient 10s infinite;
             font-family: 'Arial', sans-serif;
             color: #fff;
             text-align: center;
             padding: 50px;
             margin: 0;
-            background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Adds a starry background */
+            overflow: hidden;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         /* Title Styling */
@@ -29,6 +37,34 @@
             font-size: 1.4em;
             margin-bottom: 30px;
             line-height: 1.5;
+        }
+
+        /* Commands Section */
+        .commands {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 800px;
+            text-align: left;
+            font-size: 1.2em;
+        }
+
+        .commands h2 {
+            color: #ff0000;
+            text-shadow: 0 0 5px #ff0000;
+            margin-bottom: 15px;
+        }
+
+        .commands code {
+            display: block;
+            margin: 10px 0;
+            color: #00ff00;
+            font-size: 1em;
+            white-space: pre-line;
+            background-color: #001f3f;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         /* Highlight Links */
@@ -66,70 +102,61 @@
             box-shadow: 0 6px 12px rgba(0, 255, 0, 0.7);
         }
 
-        /* Footer Styling */
-        footer {
-            margin-top: 50px;
-            font-size: 1em;
-            color: #bbb;
-        }
-
-        footer a {
-            color: #00ff00;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Snow Animation */
+        /* Snowflake Styling */
         .snowflake {
             position: fixed;
-            top: -10px;
+            top: -50px;
+            font-size: 1.5em;
             color: white;
-            font-size: 2em;
-            animation: fall 10s linear infinite;
+            animation: snow 10s linear infinite;
+            opacity: 0.8;
             pointer-events: none;
         }
 
-        @keyframes fall {
+        @keyframes snow {
             0% {
-                transform: translateX(0) translateY(0) rotate(0deg);
+                transform: translateX(0) translateY(0);
             }
             100% {
-                transform: translateX(50px) translateY(100vh) rotate(360deg);
+                transform: translateX(200px) translateY(100vh);
             }
         }
+
+        .snowflake:nth-child(2) { left: 15%; animation-duration: 8s; }
+        .snowflake:nth-child(3) { left: 30%; animation-duration: 12s; animation-delay: 2s; }
+        .snowflake:nth-child(4) { left: 45%; animation-duration: 7s; animation-delay: 4s; }
+        .snowflake:nth-child(5) { left: 60%; animation-duration: 10s; animation-delay: 6s; }
+        .snowflake:nth-child(6) { left: 75%; animation-duration: 9s; animation-delay: 8s; }
+        .snowflake:nth-child(7) { left: 90%; animation-duration: 11s; animation-delay: 10s; }
     </style>
 </head>
 <body>
     <h1>Dead Stars</h1>
     <p>Welcome to <strong>Dead Stars</strong>, the fastest Discord nuke bot.</p>
-    <a class="cta" href="https://www.dead-stars.xyz/Discord">Join Our Server</a>
+    <a class="cta" href="https://discord.gg/RrUjanuqTs">Get Started on Discord</a>
 
-    <!-- Commands Section -->
-    <section>
-        <h2 style="margin-top: 50px; color: #00ff00;">/Commands</h2>
-        <pre style="text-align: left; margin: 0 auto; max-width: 600px; background: rgba(0, 0, 0, 0.8); padding: 20px; border-radius: 10px;">
-        .kill - Deletes all channels, recreates spam channels, and spams the server.
-        .banall - Bans all members in the server.
-        .kickall - Kicks all members in the server.
-        .lock-c - Toggles lock on all channels.
-        .nsfw-lock - Toggles NSFW lock on all channels.
-        .timeout-everyone - Timeouts all members.
-        .max-channels - Creates the maximum number of channels allowed.
-        .admin-all - Gives everyone role all permissions and creates backup admin roles.
-        .help - Displays this help menu.
-        </pre>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Dead Stars</p>
-    </footer>
+    <div class="commands">
+        <h2>Commands</h2>
+        <code>
+\.kill - Deletes all channels, recreates spam channels, and spams the server.
+\.banall - Bans all members in the server.
+\.kickall - Kicks all members in the server.
+\.lock-c - Toggles lock on all channels.
+\.nsfw-lock - Toggles NSFW lock on all channels.
+\.timeout-everyone - Timeouts all members.
+\.max-channels - Creates the maximum number of channels allowed.
+\.admin-all - Gives everyone role all permissions and creates backup admin roles.
+\.help - Displays this help menu.
+        </code>
+    </div>
 
     <!-- Snowflakes -->
-    <div class="snowflake" style="left: 10%;">*</div>
-    <div class="snowflake" style="left: 50%;">*</div>
-    <div class="snowflake" style="left: 80%;">*</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
 </body>
 </html>
