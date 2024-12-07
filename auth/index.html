@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authentication</title>
+    <title>Authenticate with Discord</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #808080; /* Light gray background */
+            color: #333333; /* Dark gray text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #666666; /* Medium gray border */
+            border-radius: 8px;
+            background-color: #bfbfbf; /* Lighter gray background for the container */
+        }
+        h1 {
+            color: #444444; /* Slightly darker gray for the heading */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #666666; /* Medium gray button */
+            border: none;
+            border-radius: 5px;
+            color: #ffffff; /* White text */
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555555; /* Slightly darker gray on hover */
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #444444; /* Gray footer text */
+        }
+    </style>
 </head>
 <body>
-    <h1>Authentication Page</h1>
-    <p>If you were redirected here, your authentication process has started.</p>
+    <div class="container">
+        <h1>Welcome to Dead Stars</h1>
+        <p>Click the button below to auth!</p>
+        <button onclick="redirectToAuth()">Click here to auth with bot</button>
+        <footer>
+            &copy; 2024 Dead Stars. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function redirectToAuth() {
+            const CLIENT_ID = "1284961003645308939";
+            const REDIRECT_URI = "https://www.dead-stars.xyz/auth";
+            const authURL = `https://discord.com/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&response_type=code&scope=identify%20guilds.join`;
+            window.location.href = authURL;
+        }
+    </script>
 </body>
 </html>
